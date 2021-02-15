@@ -1,9 +1,16 @@
 import './Appli.scss';
+import Entete from './Entete';
+import ListeSignets from './ListeSignets';
+import BtnAjoutSignet from './BtnAjoutSignet';
 
 export default function Appli() {
   return (
     <div className="Appli">
-        Gabarit de base d'une Application React
+        <Entete/>
+        <section className="contenuPrincipal">
+        <ListeSignets/>
+        <BtnAjoutSignet/>
+        </section>
     </div>
   );
 }
